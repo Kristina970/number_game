@@ -1,6 +1,6 @@
 import unittest
 
-from game_app import app
+from app import app
 
 
 class TestHealthEndpoint(unittest.TestCase):

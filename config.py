@@ -8,7 +8,7 @@ class Config:
     PG_PASSWORD = "verysecretpassword"
     PG_HOST = "localhost"
     PG_PORT = 5432
-    DB_NAME = "number_game_db"
+    DB_NAME = "game_db"
     SQLALCHEMY_DATABASE_URI = f"postgresql://{PG_USER}:{PG_PASSWORD}@{PG_HOST}:{PG_PORT}/{DB_NAME}"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -27,5 +27,4 @@ def run_config():
         return DevConfig
     elif env == "TEST":
         return TestConfig
-    else:
         return Config
